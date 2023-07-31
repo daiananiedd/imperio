@@ -28,11 +28,11 @@ html{
 }
 body{
     height: 100vh;
-    background-image: url("/assets/04.jpg");
+    
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-  /*  background: linear-gradient(120deg, var(--pumpkin), var(--ultrapink)); */
+    background: linear-gradient(120deg, var(--pumpkin), var(--ultrapink));
     background-size: cover;
 }
 
