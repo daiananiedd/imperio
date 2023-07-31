@@ -1,0 +1,316 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200&display=swap');
+
+:root{
+    --playfair-display: "Playfair Display", serif;
+    --poppins: "Poppins", sans-serif;
+
+    --black: #111111;
+    --white: #fffdfd;
+    --neongreen: #72ff65;
+    --ultrapink: #F172FF;
+    --robineggblue: #01C4D4;
+    --pumpkin: #fd7812;
+    --tekhelet: #775ec0;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--poppins);
+    font-size: 15px;
+    color: var(--white);
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    height: 100vh;
+    background: var(--white) url(/assets/04.jpg) no-repeat;
+    background-size: cover;
+}
+
+.button{
+    margin: 30px 0;
+    width: 240px;
+    height: 60px;
+    background: transparent;
+    border: 1px solid var(--white);
+    font-size: 16px;
+    font-weight: 300;
+}
+.button:hover{
+    transition: 0.5s;
+    background-color: var(--white);
+    color: var(--black);
+    font-weight: 400;
+}
+header{
+    background-color: rgba(0, 0, 0, 0.400);
+    height: 70px;
+    padding: 10px 50px;
+}
+.header__nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header__logo h4{
+    font-family: var(--playfair-display);
+    font-size: 34px;
+}
+.header__logo h4:hover{
+    transition: 0.5s;
+    color: var(--pumpkin);  
+}
+.header__menu a{
+    color: var(--white);
+    text-decoration: none;
+    margin: 0 15px;
+}
+.header__menu a:hover{
+    transition: 0.5s;
+    color: var(--pumpkin);
+    border-bottom: 1px solid var(--pumpkin);
+}
+.hero{
+    background: rgba(0, 0, 0, 0.400);
+}
+.hero__content{
+    text-align: center;
+}
+.hero__text h1{
+    font-family: var(--playfair-display);
+    font-size: 3.4em;
+    padding: 110px 0 40px 0;
+}
+.hero__text .span-title{
+    font-size: 1.2em;
+    color: var(--robineggblue);
+}
+.hero__text .span-title:hover{
+    transition: 0.5s;
+    color: var(--ultrapink);
+}
+.hero__text .span-decoration{
+    margin: auto;
+    display: flexbox;
+    width: 220px;
+    font-family: var(--playfair-display);
+    font-size: 1.2em;
+    border-bottom: 2px solid var(--robineggblue);
+}
+.hero__text .span-decoration:hover{
+    transition: 0.5s;
+    color: var(--ultrapink);
+    border: none;
+}
+.hero__text p{
+    margin: 0 auto;
+    padding: 30px 15% 50px 15%;
+    font-size: 1.4em;
+    font-weight: 400;
+}
+.hero__button{
+    padding: 20px 0 98px 0;
+}
+.products{
+    background: linear-gradient(120deg, var(--black), var(--robineggblue));
+    padding: 50px 0;
+    text-align: center;
+}
+.products__content h2{
+    padding: 30px 0;
+    font-family: var(--playfair-display);
+    color: var(--ultrapink);
+    font-size: 54px;
+}
+.products__content h3{
+    color: var(--ultrapink);
+    font-size: 34px;
+    padding-bottom: 15px ;
+}
+.products__content .title02{
+    font-size: 1.1em;
+    color: var(--robineggblue);
+}
+.products .pro-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 30px;
+    flex-wrap: wrap;
+}
+.products .pro{
+    width: 23%;
+    min-width: 300px;
+    padding: 10px 18px;
+    border: 1px solid var(--white);
+    border-radius: 25px;
+    cursor: pointer;
+    box-shadow: 20px 20px 30px rgba(192, 190, 190, 0.116);
+    margin: 15px 0;
+    transition: 0.2 ease;
+    position: relative;
+}
+.products .pro:hover{
+    box-shadow: 20px 20px 30px rgba(252, 252, 252, 0.466);
+}
+.products .pro .img{
+    width: 100%;
+    border-radius: 25px;
+}
+.products .pro .des{
+    text-align: start;
+    padding: 10px 0;
+  }
+.products .pro .des span{
+    font-family: var(--playfair-display);
+    color: var(--white);
+    font-size: 15px;
+    letter-spacing: 2px;
+  }
+  
+.products .pro .des h5{
+    font-weight: 200;
+    padding-top: 7px;
+    color: var(--robineggblue);
+    font-size: 18px;
+  }
+.products .pro .des i{
+    font-size: 12px;
+    color: rgb(255, 187, 0);
+}
+.products .pro .des h4{
+    padding-top: 7px;
+    font-size: 19px;
+    font-weight: 500;
+    color: var(--white);
+}
+.products .pro .cart{
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 50px;
+    background-color: var(--black);
+    font-weight: 500;
+    color: var(--azul);
+    border: 1px solid var(--neongreen);
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+}
+.products__content .img{
+    width: 280px;
+    padding: 15px;
+}
+.banner01{
+    background: linear-gradient(90deg, var(--tekhelet) 50%, var(--pumpkin) 50%);
+    display: block;
+}
+.banner01__text{
+    background-color: var(--neongreen);
+}
+.banner01__text h1{
+    font-size: 5.5em;
+    padding: 15px;
+    color: var(--tekhelet);
+}
+.banner01 img{
+    width: 100%;
+}
+.banner02{
+    background: linear-gradient(90deg, rgb(255, 104, 17) 50%, black 50%);
+}
+.banner02__text{
+    display: flex;
+}
+.banner02__text .text-title{
+    background-color: #775ec0;
+    width: 49.999%;
+}
+.banner02__text .text-title h2{
+    padding: 40px 292px 40px 40px ;
+    color: var(--pumpkin);
+    font-size: 3em;
+}
+.banner02__text .text-p{
+    width: 50%;
+    background: var(--pumpkin);
+}
+.banner02__text .text-p p{
+    font-size: 1.2em;
+    padding: 40px 50px;
+}
+.banner02 img{
+    width: 100%;
+}
+.banner03{
+    background: black;
+    display: flex;
+}
+.banner03 img{
+    width:49.999%;
+}
+.banner03__text{
+    padding: 40px 40px;
+    background: black;
+}
+.banner03__text h3{
+    color: var(--neongreen);
+    font-size: 3em;
+}
+.banner03__text h5{
+    border-radius: 20px;
+    margin: 20px auto;
+    font-weight: 200;
+    font-size: 20px;
+}
+.banner03__text .text-tecnology{
+    display: block;
+}
+.tecnology{
+    width: 580px;
+    padding: 40px;
+}
+.banner04{
+    display: flex;
+}
+.banner04__text{
+    padding: 30px;
+    height: 560px;
+    color: var(--neongreen);
+    background-color: var(--tekhelet);
+    width: 49.999%;
+}
+.banner04__text h2{
+    color: var(--neongreen);
+    font-size: 5em;
+    line-height: 70px;
+    padding-bottom: 50%;
+}
+.banner04__text p{
+    font-size: 1.3em;
+    color: var(--neongreen);
+    font-weight: 500;
+}
+.banner04 img{
+    width: 50%;
+}
+footer{
+    background: var(--ultrapink);
+    height: 290px;
+}
+footer h4{
+    color: var(--black);
+    font-size: 34px;
+    font-family: var(--playfair-display);
+    padding: 30px;
+    text-align: center;
+}
+footer p{
+    text-align: center;
+    color: var(--black);
+}
